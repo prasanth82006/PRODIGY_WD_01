@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+        #item1:hover{
+          background-color: rgb(103, 86, 86);
+          cursor: pointer;
+          color: yellow;
+        }
+        #item2:hover{
+          background-color: rgb(103, 86, 86);
+          cursor: pointer;
+          color: rgb(51, 128, 89);
+        }
+        #item5:hover{
+          background-color: rgb(204, 31, 31);
+          cursor: pointer;
+          color: rgb(63, 65, 86);
+        }
+        
+        #item4:hover{
+          background-color: rgb(20, 82, 191);
+          cursor: pointer;
+          color: rgb(13, 13, 11);
+        }
+
+        #item3:hover{
+          background-color: rgb(255, 165, 0);
+          cursor: pointer;
+          color: rgb(0, 0, 0);
+        }
+        
+        .content {
+            padding-top: 60px;
+        }
+
+        .section {
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <a href="#section1" id="item1">Home</a>
+        <a href="#section2" id="item2">About</a>
+        <a href="#section3" id="item3">Services</a>
+        <a href="#section4" id="item4">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="section" id="section1">Section 1: Home</div>
+        <div class="section" id="section2">Section 2: About</div>
+        <div class="section" id="section3">Section 3: Services</div>
+        <div class="section" id="section4">Section 4: Contact</div>
+    </div>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const links = navbar.querySelectorAll('a');
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                const bgColor = getRandomColor();
+                const textColor = getRandomColor();
+                navbar.style.backgroundColor = bgColor;
+                links.forEach(link => {
+                    link.style.color = textColor;
+                });
+            } else {
+                navbar.style.backgroundColor = '#333';
+                links.forEach(link => {
+                    link.style.color = 'white';
+                });
+            }
+        });
+    </script>
+</body>
+</html> -->
